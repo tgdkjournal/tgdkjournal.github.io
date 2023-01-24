@@ -1,0 +1,106 @@
+/* some global values/defaults */
+body {
+  background-color: #FFF7EA;
+  color: #000000;
+  font-family: "Georgia","serif";
+}
+
+/* top bar */
+.topbar {
+  background-color: #332211;
+  margin-left: 190px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: calc(100% - 210px);
+  overflow: hidden;
+}
+
+/* div for all the links in the top navigation bar */
+/*
+.topbarlinks {
+  float: right;
+}
+*/
+
+/* div for title and tag line in top bar */
+.topbartitleandtag {
+  float: right;
+  color: #FFF7EA;
+  padding: 14px;
+  vertical-align: middle
+}
+
+/* div for title in top bar */
+.topbartitle {
+  font-size: 30px;
+  padding: 6px;
+}
+
+/* div for tag line in top bar */
+.topbartagline {
+  font-size: 20px;
+  padding: 6px;
+}
+
+/* Style the links inside the navigation bar */
+.topbar a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px 14px 16px;
+  text-decoration: none;
+  font-size: 20px
+}
+
+.logo img {
+  float: left;
+  padding: 14px 16px 25px 16px;
+  text-align: center;
+  width: 150px
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #332211;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #998877;
+  display: block;
+}
+
+.sidenav a.active {
+  color: #FFF7EA;
+}
+
+.sidenav a:hover {
+  color: #FFF7EA;
+}
+
+.main {
+  margin-left: 220px;
+  margin-right: 15%; 
+  padding: 20px 20px;
+  min-width: 300px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+p {
+  text-align: justify
+}
+
+a {
+  color: #998877
+}
