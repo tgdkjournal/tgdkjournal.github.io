@@ -101,10 +101,14 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-p {
+.main p {
   text-align: justify
 }
 
-a {
+.main a {
   color: #998877
+}
+
+.main a:visited {
+  color: #332211
 }
