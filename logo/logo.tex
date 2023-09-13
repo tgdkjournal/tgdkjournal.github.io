@@ -1,0 +1,75 @@
+\documentclass[12pt]{standalone}
+\usepackage[sfdefault,extralight,medium]{josefin}
+\usepackage{inconsolata}
+\usepackage[rgb]{xcolor}
+\usepackage{tikz}
+
+%OPTION 0
+%\definecolor{colorT}{HTML}{000000}
+%\definecolor{colorG}{HTML}{000000}
+%\definecolor{colorD}{HTML}{000000}
+%\definecolor{colorK}{HTML}{000000}
+%\definecolor{colorBG}{HTML}{FFFFFF}
+
+%OPTION 1
+%\definecolor{colorT}{HTML}{B7AE9E}
+%\definecolor{colorG}{HTML}{EB5E28}
+%\definecolor{colorD}{HTML}{FFFCF2}
+%\definecolor{colorK}{HTML}{FFFCF2}
+%\definecolor{colorBG}{HTML}{403D39}
+
+%OPTION 2
+\definecolor{colorT}{HTML}{513B56}
+\definecolor{colorG}{HTML}{348AA7}
+\definecolor{colorD}{HTML}{525174}
+\definecolor{colorK}{HTML}{525174}
+%\definecolor{colorD}{HTML}{525174}
+%\definecolor{colorK}{HTML}{525174}
+\definecolor{colorBG}{HTML}{FFFFFF}
+
+%OPTION 3
+%\definecolor{colorT}{HTML}{DCCDE8}
+%\definecolor{colorG}{HTML}{B37BA4}
+%\definecolor{colorD}{HTML}{DCCDE8}
+%\definecolor{colorK}{HTML}{DCCDE8}
+%\definecolor{colorBG}{HTML}{00100B}
+
+\tikzset{gnode/.style={
+		circle,fill=colorG,minimum height=0.06cm,inner sep=0pt
+	}
+}
+
+\tikzset{blank/.style={
+		fill=colorBG,draw=none,rectangle,inner sep=0pt
+	}
+}
+
+\begin{document}
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}
+\node[fill=colorBG] (tgdk) {\Huge\textsf{\textcolor{colorT}{T}{\scriptsize$\!$}\textcolor{colorG}{G}\textcolor{colorD}{D}\textcolor{colorK}{K}}};
+ 	
+\newcommand{\xzero}{-0.62}
+\newcommand{\xzeroa}{-0.605}
+\newcommand{\xone}{-0.5}
+\newcommand{\xtwo}{-0.31}
+\newcommand{\xthree}{-0.155}
+
+\newcommand{\yone}{-0.25}
+\newcommand{\ytwo}{-0.048}
+\newcommand{\ythree}{0.096}
+\newcommand{\yfour}{0.25}
+
+
+\node[blank,anchor=south,minimum height=0.15cm,minimum width=0.11cm] at (\xzero,\ytwo) {};
+%\node[blank,anchor=south,minimum height=0.18cm,minimum width=0.11cm] at (\xthree,\yone) {};
+
+\node[gnode] (g1) at (\xthree,\yfour) {};
+\node[gnode] (g2) at (\xzeroa,\ythree) {};
+\node[gnode] (g3) at (\xzero,\ytwo) {};
+\node[gnode] (g4) at (\xthree,\yone) {};
+\node[gnode] (g5) at (\xthree,\ytwo) {};
+\node[gnode] (g6) at (\xtwo,\ytwo) {};
+\end{tikzpicture}
+}
+\end{document} 
