@@ -4,19 +4,31 @@ html {
 }
 
 body {
-  background-color: #FFF7EA;
-  color: #000000;
-  font-family: "Georgia","serif";
+  background-color: #EDFCFF;
+  color: #513B56;
+  font-family: "Optima", "Segoe", "Segoe UI", "Candara", "Calibri", "Arial", "sans-serif";
 }
 
 /* top bar */
 .topbar {
-  background-color: #332211;
+  background-color: #85a0ad;  /* #97AFBA; */
   overflow: hidden;
-  margin-left: 162px;
+  margin-left: calc(200px + 0% - 10px);
   margin-top: 20px;
-  margin-right: 40px;
+  margin-right: 0%; 
   min-width: 230px
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  margin-left: 0%; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #85a0ad;  /* #97AFBA; #85a0ad */
+  padding-top: 45px;
 }
 
 /* div for all the links in the top navigation bar */
@@ -29,7 +41,7 @@ body {
 /* div for title and tag line in top bar */
 .topbartitleandtag {
   float: right;
-  color: #FFF7EA;
+  color: #EDFCFF;
   padding: 14px;
   vertical-align: middle
 }
@@ -48,41 +60,30 @@ body {
 
 .logo img {
   float: left;
-  padding: 14px 16px 25px 16px;
+  padding: 14px 16px 35px 16px;
   text-align: center;
-  width: 140px
-}
-
-.sidenav {
-  height: 100%;
-  width: 175px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #332211;
-  padding-top: 20px;
+  width: 160px
 }
 
 .sidenav a {
   padding: 6px 16px 6px 16px;
   text-decoration: none;
   font-size: 18px;
-  color: #998877;
+  color: #525174;
   display: block;
 }
 
 .sidenav a.active {
-  color: #FFF7EA;
+  color: #EDFCFF;
 }
 
 .sidenav a:hover {
-  color: #FFF7EA;
+  color: #EDFCFF;
 }
 
 .main {
-  margin-left: 185px;
-  margin-right: 15%; 
+  margin-left: calc(0% + 200px);
+  margin-right: 0%; 
   padding: 20px 20px;
   min-width: 300px;
 }
@@ -99,9 +100,9 @@ body {
 }
 
 .main a {
-  color: #998877
+  color: #348AA7
 }
 
 .main a:visited {
-  color: #332211
+  color: #525174
 }
