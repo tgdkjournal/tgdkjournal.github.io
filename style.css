@@ -91,8 +91,7 @@ body {
 .sidenav a.active {
   color: #EDFCFF;
   text-decoration: none;
-  font-weight: 500;
-  display: block;
+  font-weight: 500
 }
 
 .sidenav a:hover {
@@ -105,6 +104,7 @@ body {
   margin-right: 0%; 
   padding: 20px 20px;
   min-width: 300px;
+  font-size: 15px
 }
 
 /*
@@ -126,7 +126,7 @@ body {
   color: #525174
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .sidenav {
     width: 100%;
     height: auto;
@@ -159,6 +159,53 @@ body {
     font-size: 14px;
   }
   .main {
-    margin-left: 1px
+    margin-left: 1px;
+    font-size: 12px
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+	padding-top: 0px;
+	padding-bottom: 8px;
+	text-align:center
+  }
+  .logo { 
+    float: none;
+	text-align: center;
+    width: 100%
+  }
+  .logo img {
+	float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 285px; 
+	padding: 8px 8px 8px 8px
+  }
+  .sidenavtitle { 
+    float: none;
+	position: static;
+    text-align: center;
+	padding: 0px 8px 8px 8px
+  }
+  .sidenav a {
+    display: inline;
+	font-size: 11px
+  }
+  .main {
+	font-size: 11px
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .sidenav {
+    min-width: 355px
+  }
+  .sidenav a {
+    font-size: 10px
   }
 }
