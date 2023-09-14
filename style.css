@@ -11,7 +11,7 @@ body {
 
 /* top bar */
 .topbar {
-  background-color: #85a0ad;  /* #97AFBA; */
+  background-color: #525174;  /* #85a0ad; */
   overflow: hidden;
   margin-left: calc(200px + 0% - 10px);
   margin-top: 20px;
@@ -27,7 +27,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #85a0ad;  /* #97AFBA; #85a0ad */
+  background-color: #525174;  /* #85a0ad */
   padding-top: 45px;
 }
 
@@ -44,6 +44,16 @@ body {
   color: #EDFCFF;
   padding: 14px;
   vertical-align: middle
+}
+
+/* div for title on small displays */
+.sidenavtitle {
+  float: right;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 14px;
+  vertical-align: bottom;
+  display: none
 }
 
 /* div for title in top bar */
@@ -69,7 +79,7 @@ body {
   padding: 6px 16px 6px 16px;
   text-decoration: none;
   font-size: 18px;
-  color: #525174;
+  color: #a9a8c0;
   font-weight: 500;
   display: block;
 }
@@ -117,20 +127,32 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-	padding-top: 5px;
+	padding-top: 0px;
   }
-  .sidebar a {float: left;}
   .logo { float: right; vertical-align: middle }
-  .logo img { float: right; width: 200px }
+  .logo img { float: right; width: 285px; padding: 8px 16px 35px 16px; }
   .topbartitleandtag {
     float: left;
     padding: 0px;
     vertical-align: top
+  }	
+  ul {
+    padding-left: 20px;
   }
   .topbar {
 	display: none;
 	margin-left: 0px;
 	margin-top: 10px;
+  }
+  .sidenavtitle {
+	position: absolute;
+    right: 6px;
+    bottom: -8px;
+    display: block;
+	font-weight: 500;
+  }
+  .sidenav a {
+    font-size: 14px;
   }
   .main {
     margin-left: 1px
