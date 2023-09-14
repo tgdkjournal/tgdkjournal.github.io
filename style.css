@@ -131,6 +131,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
+	padding-top: 8px;
   }
   .logo { float: right; vertical-align: middle }
   .logo img { float: right; width: 285px; padding: 8px 16px 35px 16px; }
@@ -138,21 +139,19 @@ body {
     float: left;
     padding: 0px;
     vertical-align: top
-  }	
+  }    
   ul {
     padding-left: 20px;
   }
   .topbar {
-	display: none;
-	margin-left: 0px;
-	margin-top: 10px;
+    display: none
   }
   .sidenavtitle {
-	position: absolute;
+    position: absolute;
     right: 6px;
     bottom: 4px;
     display: block;
-	font-weight: 500;
+    font-weight: 500;
   }
   .sidenav a {
     font-size: 14px;
@@ -168,35 +167,35 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-	padding: 0px;
-	padding-bottom: 8px;
-	text-align:center
+    padding: 0px;
+    padding-bottom: 8px;
+    text-align:center
   }
   .logo { 
     float: none;
-	text-align: center;
+    text-align: center;
     width: 100%
   }
   .logo img {
-	float: none;
+    float: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
-	width: 285px; 
-	padding: 8px 8px 8px 8px
+    width: 285px; 
+    padding: 8px 8px 8px 8px
   }
   .sidenavtitle { 
     float: none;
-	position: static;
+    position: static;
     text-align: center;
-	padding: 0px 8px 8px 8px
+    padding: 0px 8px 8px 8px
   }
   .sidenav a {
     display: inline;
-	font-size: 11px
+    font-size: 11px
   }
   .main {
-	font-size: 11px
+    font-size: 11px
   }
 }
 
