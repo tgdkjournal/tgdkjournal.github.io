@@ -76,7 +76,9 @@ body {
 
 .sidenav a.active {
   color: #EDFCFF;
+  text-decoration: none;
   font-weight: 500;
+  display: block;
 }
 
 .sidenav a:hover {
@@ -108,4 +110,29 @@ body {
 
 .main a:visited {
   color: #525174
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+	padding-top: 5px;
+  }
+  .sidebar a {float: left;}
+  .logo { float: right; vertical-align: middle }
+  .logo img { float: right; width: 200px }
+  .topbartitleandtag {
+    float: left;
+    padding: 0px;
+    vertical-align: top
+  }
+  .topbar {
+	display: none;
+	margin-left: 0px;
+	margin-top: 10px;
+  }
+  .main {
+    margin-left: 1px
+  }
 }
