@@ -68,6 +68,10 @@ body {
   padding: 6px;
 }
 
+.logo {
+  position: relative
+}
+
 .logo img {
   float: left;
   padding: 14px 16px 35px 16px;
@@ -147,7 +151,7 @@ body {
   .sidenavtitle {
 	position: absolute;
     right: 6px;
-    bottom: -8px;
+    bottom: 4px;
     display: block;
 	font-weight: 500;
   }
