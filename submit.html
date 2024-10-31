@@ -42,8 +42,47 @@
           <li>Format your submission according to the LaTeX template available <a href="https://drops.dagstuhl.de/entities/journal/TGDK">here</a>. Please note that the review process is single anonymous, meaning that you should include the names of authors.</li>
 		  <li>Include ORCID identifiers for each author. You may search for your ORCID identifier or request one on the <a href="https://orcid.org/">ORCID website</a>.</li>
 		  <li>Ensure to include DOIs for paper references where available.</li>
+		  <li>Submissions of Research and Resource articles <strong>must</strong> include a <a href="#resourceStatement">Resource Availability Statement</a>.</li>
 		  <li>Submit your paper on <a href="https://journal-submission.dagstuhl.de/TGDK/submit/start/">our submission platform</a> (this may require creating an account if you do not have one already). Be sure to select the correct submission type under Section (including Special Issue, if applicable).</li>
         </ul>
+		
+        <h2 id='resourceStatement'>Resource Availability Statement</h2>
+		<p>Reproducibility is a key aspect of scientific research. In the case of Research and Resources articles, we ask that all resources relevant to the article under submission to TGDK be made available for review and appropriately documented. Aside from improving reproducibility, making resources available has the additional benefits of allowing the community to build upon these resources in their own research, and to allow readers to verify or better understand additional details not mentioned in the article. In case some resource cannot be published, we require that the authors explicitly declare this, and justify why.</p>
+		
+		<p><strong>TGDK requires Research and Resources articles to include a <em>Resource Availability Statement</em> following a standard format as described below.</strong> The purpose of this statement is to allow readers of any such TGDK article to quickly understand what resources are made available (if any), under what conditions, and where they can be found; otherwise, it should provide readers with a clear justification for relevant resources that cannot be published. The Resource Availability Statement will also be used by reviewers to assess the Reproducibility/Resource quality criteria for Research/Resource articles. <strong>This statement must thus be included with submissions for review (starting from December 1st, 2024) and in the camera-ready version of relevant articles.</strong> This statement is optional for Surveys and other submission types (but highly encouraged when relevant resources are involved). 
+        <ul>
+          <li>The Resource Availability Statement must be placed immediately before references as an unnumbered section entitled Resource Availability Statement (<code>\section*{Resource Availability Statement}</code>).</li>
+          <li>If the article involves no such supplemental resource, the statement is still required with the following declaration: "<code>The authors declare that this article involves no relevant supplemental resources.</code>". Such a declaration is typically only applicable for Research articles with full proofs included in the article to substantiate theoretical claims. Such a declaration is never applicable for Resource articles and rarely (if ever) applicable for Research articles with empirical results.
+          <li>In case there is a relevant supplemental resource that can be published, it must be published and listed; the statement must be complete in covering all supplemental material contributing or relevant to the content of the article.</li>
+          <li>In case of a resource that may evolve over time (e.g., source code under active development), sufficient details must be provided for readers to find the specific relevant version.</li>
+          <li>In case there is relevant supplemental material that cannot be published (e.g., for commercial, ethical, legal or technical reasons), it must still be discussed in the statement, and a justification must be provided for not publishing it, stating any conditions under which such material could be made (partially) available, if any.</li>
+          <li>References to relevant materials can be via URLs directly in the text, via URLs in footnotes, or via a bibliographical reference in the text; please ensure any URLs are formatted as such, whereby they can be clicked on in a digital version of the article to visit the page.</li>
+          <li>Relevant resources included in this statement must be well-documented or otherwise self-explanatory for readers visiting the materials.</li>
+		  <li>The article must provide a clear statement of the claims and clear argumentation regarding how these claims are substantiated by evidence without requiring readers to visit the external resources provided; reviewing external resources should not be required to understand these claims and the evidence provided.</li>
+		  <li>Resources should be published in such a way that enables long-term availability via persistent links; for example, use of archival platforms such as arXiv, Figshare, Zenodo, etc., are encouraged. Established platforms such as Github are also acceptable for source code and other materials. We discourage platforms not intended for long-term publication, such as a personal homepage, file-sharing services (DropBox, Google Drive), etc. Company, personal and (non-archival) institutional platforms are also not suitable for archival purposes, but they can be used to host live demonstrations and services when accompanied by source code, data, and/or long-term archiving of a static snapshot.</li>
+        </ul>
+		
+		<p>In summary, we expect authors to make a reasonable effort to make all relevant resources available as widely as possible, and for as long as possible, and to provide a Resource Availability Statement to this effect.</p>
+		
+		<p>As a guide to authors, we provide the following abstract example in LaTeX that should be adapted as necessary.  The format is flexible, but be sure to provide links and details on what is made available where, under what license or access/use conditions, what precise version was used in the article, etc. This statement will be reviewed as part of the Reproducibility/Resource quality criteria for Research/Resource articles. Missing or insufficient statements may be grounds for rejection.</li>
+		<pre><code>\section*{Resource Availability Statement}
+
+The homepage for the project is hosted on a server at INSTITUTE.\footnote{\url{http://myhomepage.org}}.
+The source code for XXX is published on Github under an XXX license\footnote{\url{https://github.com/XXX/YYY}}, 
+  where version X.Y.Z was used for the performance results presented in Section~\ref{exampleRef}. 
+Source code for the external baseline XXX is also available on Github, along with documentation
+  on how to run the baseline.\footnote{\url{https://github.com/AAA/BBB}}
+Queries, ontologies and data used for the experiments presented in Section~\ref{exampleRef2} are 
+  available on Zenodo under an XXX license.\footnote{\url{http://zenodo.org/XXX}}.
+An extended version with additional appendices, including more detailed proofs,
+  is available on arXiv~\cite{extendedVersion}.
+We cannot publish details of user evaluations for privacy reasons; to request further information 
+  along these lines, please contact the authors by email.
+
+%%
+%% Bibliography
+%%
+		</code></pre>
       </div>
     </main>
   </body>
