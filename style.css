@@ -9,6 +9,20 @@ body {
   font-family: "Optima", "Segoe", "Segoe UI", "Candara", "Calibri", "Arial", "sans-serif";
 }
 
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+td {
+  background-color: #F6FFFF;
+}
+
+th {
+  background-color: #525174;
+  color: #EDFCFF;
+}
+
 /* top bar */
 .topbar {
   background-color: #525174;  /* #85a0ad; */
